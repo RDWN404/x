@@ -1,9 +1,5 @@
 pipeline {
-    agent any
-
-    environment {
-        DOCKER_IMAGE = 'x'
-    }
+    agent { docker { image 'golang:1.23.4-alpine3.21' } }
 
     stages {
         stage('Checkout') {
