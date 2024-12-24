@@ -21,16 +21,16 @@ pipeline {
             }
         }
 
-        stage('Push Docker Image') {
-            steps {
-                echo "pushing to docker hub"
-                script {
-                    // Push image ke Docker registry jika diperlukan
-                    // sh 'docker push ${DOCKER_IMAGE}'  // Un-comment jika ingin mem-push image
-                }
-                echo "done"
-            }
-        }
+        // stage('Push Docker Image') {
+        //     steps {
+        //         echo "pushing to docker hub"
+        //         script {
+        //             // Push image ke Docker registry jika diperlukan
+        //             // sh 'docker push ${DOCKER_IMAGE}'  // Un-comment jika ingin mem-push image
+        //         }
+        //         echo "done"
+        //     }
+        // }
 
         stage('Run Docker Container') {
             steps {
