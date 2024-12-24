@@ -10,7 +10,7 @@ pipeline {
             steps {
                 // Ambil kode dari Git repository
                 echo "checking out repo"
-                git url: 'https://github.com/username/my-golang-app.git', branch: 'master'  // Ganti dengan URL repo Anda
+                git url: 'https://github.com/RDWN404/x.git', branch: 'master'  // Ganti dengan URL repo Anda
             }
         }
 
